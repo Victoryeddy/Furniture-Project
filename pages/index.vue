@@ -358,7 +358,7 @@
                 </p>
                 
                 <div class="mt-7">
-                  <carousel :items-to-show="1" wrapAround="true" :autoplay="3000" >
+                  <carousel :items-to-show="1" wrapAround :autoplay="3000" >
                     <slide v-for="slide in allData.items" :key="slide.id">
                       <p class="carousel__item text-2xl text-start">{{ slide.name }}</p>
                       <div class="carousel__item flex my-5 ">
