@@ -8,7 +8,7 @@
         <div>
           <img src="../assets/loaft-header.jpg" alt="" width="900" />
         </div>
-        <div class=" ms-0 lg:ms-10 mt-10 px-3 lg:px-0">
+        <div class="ms-0 lg:ms-10 mt-10 px-3 lg:px-0">
           <div class="flex flex-col justify-between">
             <img src="../assets/logo.png" alt="" width="60" class="pt-5" />
             <div class="flex flex-col mt-12">
@@ -23,7 +23,9 @@
               </p>
             </div>
           </div>
-          <div class="bg-yellow-700 p-9 w-7/12 right-0 bottom-0 absolute hidden lg:block">
+          <div
+            class="bg-yellow-700 p-9 w-7/12 right-0 bottom-0 absolute hidden lg:block"
+          >
             <p class="flex justify-center text-white hover-me">
               <span class="mt-1 me-2 font-bold text-xl"
                 >Learn More About Precise Design</span
@@ -38,7 +40,9 @@
     <section>
       <div class="py-[5rem]">
         <div class="container mx-auto px-3">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-stretch">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-stretch"
+          >
             <div class="flex flex-col">
               <div class="justify-self-start">
                 <h2 class="text-5xl font-extrabold">
@@ -168,7 +172,9 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-stretch mt-3">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-stretch mt-3"
+          >
             <div class="flex">
               <img src="../assets/service1.jpg" class="self-center" />
             </div>
@@ -233,7 +239,9 @@
     <section>
       <div class="py-[5rem]">
         <div class="container mx-auto px-3">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-stretch">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-stretch"
+          >
             <div class="flex flex-col">
               <div class="justify-self-end">
                 <h2 class="text-5xl font-extrabold">
@@ -243,7 +251,6 @@
                   Immerse yourself in a visual journey that celebrates
                   creativity and inspiration. From mesmerizing paintings to
                   thought-provoking sculptures, each piece tells a unique story.
-                  
                 </p>
                 <p class="mt-5">
                   <img src="../assets/svg/move-right (1).svg" />
@@ -251,48 +258,67 @@
               </div>
 
               <div class="gallery-box relative mt-6">
-                <img src="../assets/gallery1.jpg" class=""/>
-                <div class="bg-white absolute  right-0 bottom-0 z-30 p-6 expand-box">
+                <img src="../assets/gallery1.jpg" class="" />
+                <div
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box"
+                >
                   <img src="../assets/expand.svg" />
                 </div>
               </div>
-              <div class="gallery-box relative mt-6  self-end">
-                <img src="../assets/gallery3.jpg"/>
-                <div class="bg-white absolute  right-0 bottom-0 z-30 p-6 expand-box-2 ">
+              <div class="gallery-box relative mt-6 self-end">
+                <img src="../assets/gallery3.jpg" />
+                <div
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2"
+                >
                   <img src="../assets/expand.svg" />
                 </div>
               </div>
             </div>
 
             <div class="flex flex-col">
-              <div class="gallery-box relative mt-6  self-start">
-                <img src="../assets/gallery2.jpg"/>
-                <div class="bg-white absolute  right-0 bottom-0 z-30 p-6 expand-box-2 ">
+              <div class="gallery-box relative mt-6 self-start">
+                <img src="../assets/gallery2.jpg" />
+                <div
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2"
+                >
                   <img src="../assets/expand.svg" />
                 </div>
               </div>
               <div class="gallery-box relative mt-6 self-start">
                 <img src="../assets/gallery4.jpg" />
-                <div class="bg-white absolute  right-0 bottom-0 z-30 p-6 expand-box">
+                <div
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box"
+                >
                   <img src="../assets/expand.svg" />
                 </div>
               </div>
-              <div class=" mt-5 grid grid-cols-3">
-                <div class="card p-3 m-2">
-                  <img src="../assets/svg/briefcase.svg" class="icons-gallery" />
-                  <p></p>
+              <div class="mt-5 grid grid-cols-3">
+                <div class="card p-3 m-2 flex justify-center items-center flex-col">
+                  
+
+                    <img
+                      src="../assets/svg/briefcase.svg"
+                      class="icons-gallery "
+                      width="60"
+                    />
+                 
+                  <p class="font-black text-3xl text-center mt-4">{{ projectDoneStart }}</p>
+                  <p class="text-gray-500 font-bold">Projects Done</p>
                 </div>
-                <div class="card p-3 m-2">
-                  <img src="../assets/svg/crown.svg" class="icons-gallery" />
-                  hello there
+                <div class="card p-3 m-2 flex justify-center items-center flex-col">
+                  <img src="../assets/svg/crown.svg" class="icons-gallery" width="60" />
+                  <p class="font-black text-3xl text-center mt-4">{{ membersStart }}</p>
+                  <p class="text-gray-500 font-bold">Expert Members</p>
+
                 </div>
-                 <div class="card p-3 m-2">
-                  <img src="../assets/svg/trophy.svg" class="icons-gallery" />
-                  hello there
+                <div class="card p-3 m-2 flex justify-center items-center flex-col">
+                  <img src="../assets/svg/trophy.svg" class="icons-gallery" width="60"/>
+                  <p class="font-black text-3xl text-center mt-4">{{ achievementStart }}</p>
+                  <p class="text-gray-500 font-bold">Achievements</p>
+
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -301,13 +327,75 @@
 </template>
 
 <script setup>
+const projectDoneStart = ref(0)
+const projectDoneEnd = ref(500)
+
+const membersStart = ref(0)
+const membersEnd = ref(150)
+
+const achievementStart = ref(0)
+const achievementEnd = ref(225)
+
+// function counter() {
+//   projectCount.value = setInterval(
+//     () =>
+//       projectDoneStart.value < projectDoneEnd.value
+//         ? projectDoneStart.value++
+//         : clearInterval(projectDoneStart.value),
+//     100
+//   )
+
+//   console.log(projectCount.value);
+//   // membersCount.value = setInterval(
+//   //   () =>
+//   //     membersStart.value < membersEnd.value
+//   //       ? membersStart.value++
+//   //       : clearInterval(membersStart.value),
+//   //   100
+//   // )
+//   // achievementCount.value = setInterval(
+//   //   () =>
+//   //     achievementStart.value < achievementEnd.value
+//   //       ? achievementStart.value++
+//   //       : clearInterval(achievementStart.value),
+//   //   100
+//   // )
+// }
+
+function counter() {
+  const projectIntervalId = setInterval(() => {
+    if (projectDoneStart.value < projectDoneEnd.value) {
+      projectDoneStart.value++;
+      // console.log(projectDoneStart.value)
+    } else {
+      clearInterval(projectIntervalId);
+    }
+  },  1);
+  const memberIntervalId = setInterval(() => {
+    if (membersStart.value < membersEnd.value) {
+      membersStart.value++;
+    } else {
+      clearInterval(memberIntervalId);
+    }
+  },  1);
+  const achievementIntervalId = setInterval(() => {
+    if (achievementStart.value < achievementEnd.value) {
+      achievementStart.value++;
+    } else {
+      clearInterval(achievementIntervalId);
+    }
+  },  1);
+}
 
 
+onMounted(() => {
+  counter()
+})
 </script>
 <style>
 * {
   font-family: "Lato", sans-serif;
-  /* outline: 1px solid red;  */
+  /* outline: 1px solid red; */
 }
 .hover-me > span,
 .hover-me > img {
@@ -329,42 +417,37 @@
   filter: grayscale(0);
 }
 
-.gallery-box::after{
+.gallery-box::after {
   content: "";
   position: absolute;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  background-color:#333;
-  opacity:0;
-
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0;
 }
 
-.gallery-box > .expand-box{
+.gallery-box > .expand-box {
   opacity: 0;
   /* transform:translateY(-4.5rem); */
   transition: all 0.3s ease-in;
 }
-.gallery-box:hover > .expand-box{
- opacity:1;
- transform:translateY(-20.5rem);
-
+.gallery-box:hover > .expand-box {
+  opacity: 1;
+  transform: translateY(-20.5rem);
 }
-.gallery-box > .expand-box-2{
+.gallery-box > .expand-box-2 {
   opacity: 0;
   /* transform:translateY(-4.7rem); */
   transition: all 0.3s ease-in;
 }
-.gallery-box:hover > .expand-box-2{
- opacity:1;
- transform:translateY(-40.5rem);
-
+.gallery-box:hover > .expand-box-2 {
+  opacity: 1;
+  transform: translateY(-40.5rem);
 }
 
-
-
-.gallery-box:hover::after{
+.gallery-box:hover::after {
   opacity: 0.5;
   visibility: visible;
 }
