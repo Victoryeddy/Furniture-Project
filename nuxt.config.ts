@@ -1,23 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {resolve} from "path";
+import { resolve } from "path";
 export default defineNuxtConfig({
   devtools: { enabled: false },
   alias: {
-    "@": resolve(__dirname, "/"),   
+    "@": resolve(__dirname, "/"),
   },
-   modules: ['@pinia/nuxt', ['@nuxtjs/google-fonts', {
-       families: {
-         Roboto: true,
-         Inter: [400, 700],
-         Lato: [100, 300],
-         Raleway: {
-           wght: [100, 400],
-           ital: [100]
-         }
-       }
-   }]],
+  modules: ['@pinia/nuxt', ['@nuxtjs/google-fonts', {
+    families: {
+      Roboto: true,
+      Inter: [400, 700],
+      Lato: [100, 300],
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      }
+    }
+  }], 'vue3-carousel-nuxt'],
   css: ['~/assets/css/main.css'],
-   postcss: {
+  postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
