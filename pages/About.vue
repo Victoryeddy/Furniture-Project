@@ -77,7 +77,7 @@
 <script setup></script>
 
 <style scoped>
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 </style>
