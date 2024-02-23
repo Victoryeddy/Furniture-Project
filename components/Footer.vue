@@ -31,7 +31,7 @@
                   required
                 />
                 <button
-                  class="bg-[#F5CA56] py-3 px-3 mt-2 absolute right-0 bottom-0"
+                  class="bg-yellow-300 hover:bg-yellow-600 py-3 px-3 mt-2 absolute right-0 bottom-0"
                 >
                   <img src="../assets/svg/caret-right.svg" />
                 </button>
@@ -53,6 +53,10 @@
     </footer>
 </template>
 <script setup>
+
+const date = ref("")
+
+date.value = new Date().getFullYear()
 </script>
 <style scoped>
 </style>

@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="fixed right-10 top-10 z-40">
-      <img src="../assets/svg/align-right.svg" class="cursor-pointer" />
-    </div>
+    
     <section>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 relative min-h-full">
         <div>
@@ -421,31 +419,6 @@ const membersEnd = ref(150)
 const achievementStart = ref(0)
 const achievementEnd = ref(225)
 
-// function counter() {
-//   projectCount.value = setInterval(
-//     () =>
-//       projectDoneStart.value < projectDoneEnd.value
-//         ? projectDoneStart.value++
-//         : clearInterval(projectDoneStart.value),
-//     100
-//   )
-
-//   console.log(projectCount.value);
-//   // membersCount.value = setInterval(
-//   //   () =>
-//   //     membersStart.value < membersEnd.value
-//   //       ? membersStart.value++
-//   //       : clearInterval(membersStart.value),
-//   //   100
-//   // )
-//   // achievementCount.value = setInterval(
-//   //   () =>
-//   //     achievementStart.value < achievementEnd.value
-//   //       ? achievementStart.value++
-//   //       : clearInterval(achievementStart.value),
-//   //   100
-//   // )
-// }
 
 function counter() {
   const projectIntervalId = setInterval(() => {
@@ -493,9 +466,9 @@ const allData = reactive({
   ],
 })
 
-const date = ref("")
 
-date.value = new Date().getFullYear()
+
+
 
 onMounted(() => {
   counter()
@@ -506,6 +479,11 @@ onMounted(() => {
   font-family: "Lato", sans-serif;
   /* outline: 1px solid red; */
 }
+
+
+
+
+
 .hover-me > span,
 .hover-me > img {
   transition: all 0.5s ease-in-out;
