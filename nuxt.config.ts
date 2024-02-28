@@ -2,6 +2,10 @@
 import { resolve } from "path";
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  // build: {
+  //   transpile: ['vue3-google-map'],
+  // },
+  plugins: ['~/plugins/vue3-google-map.ts'],
   alias: {
     "@": resolve(__dirname, "/"),
   },
@@ -22,5 +26,6 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
-  },
+  }
+ 
 })
