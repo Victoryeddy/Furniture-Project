@@ -2,10 +2,13 @@
 import { resolve } from "path";
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  // build: {
-  //   transpile: ['vue3-google-map'],
-  // },
-  plugins: ['~/plugins/vue3-google-map.ts'],
+  runtimeConfig: {
+    public:{
+
+      newsApiKey: process.env.VUE_APP_NEWS_API_KEY,
+    }
+  },
+  plugins: ['~/plugins/vue3-google-map.ts', '~/plugins/G-news-api.ts'],
   alias: {
     "@": resolve(__dirname, "/"),
   },

@@ -16,14 +16,14 @@
               </p>
             </div>
           </div>
-          <div
+          <!-- <div
             class="bg-yellow-700 p-4 w-5/12 mt-7 right-0 bottom-0 absolute hidden lg:block cursor-pointer"
           >
             <p class="flex justify-center text-white hover-me">
               <span class="mt-1 me-2 font-bold text-xl">Contact Us</span>
               <img src="../assets/svg/move-right.svg" class="" />
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -42,8 +42,8 @@
             </GoogleMap>
           </div>
 
-          <div class="grid grid-cols-3 gap-4 mt-10">
-            <div>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
+            <div >
               <ul class="list-none">
                 <li class="flex align-start">
                   <img
@@ -87,32 +87,40 @@
               </ul>
             </div>
 
-            <div>
-              <form action="">
-                <div class="grid grid-cols-1 gap-4">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Enter your fullname"
-                      class="p-3 outline-2 w-50"
-                      required
-                    />
+            <div class="col-span-2">
+              <form action="#">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+                  <div class="col-span-2">
+
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        placeholder="Enter your fullname"
+                        class="p-3 outline-2 focus:outline-yellow-800 w-full rounded border-yellow-800 border-2"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3 mt-3">
+                      <input
+                        type="email"
+                        placeholder="e.g vic@gmail.com"
+                        class="p-3 outline-2 focus:outline-yellow-800 w-full border-yellow-800 border-2"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3 mt-3">
+                      <input
+                        type="number"
+                        placeholder="Enter your phone number"
+                        class="p-3 outline-2 focus:outline-yellow-800 w-full border-yellow-800 border-2"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="e.g vic@gmail.com"
-                      class="p-3 outline-2 w-50"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="number"
-                      placeholder="Enter your phone number"
-                      class="p-3 outline-2 w-50"
-                      required
-                    />
+                  <div class="col-span-2">
+                    <textarea class="p-3 outline-2 focus:outline-yellow-800 w-full rounded border-yellow-800 border-2 h-full" placeholder="Enter Message"/>
+
+                    <p class="text-end mt-4"><button class="px-6 py-4 rounded bg-yellow-800 text-white font-bold">Send Message</button></p>
                   </div>
                 </div>
               </form>

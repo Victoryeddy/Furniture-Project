@@ -15,7 +15,7 @@
               </p>
               <p class="text-gray-300 mt-6">
                 Copyright&copy;{{ date }}. Made by
-                <span class="text-[#F5CA56] font-extrabold">Victory Ndu</span>
+                <span class="text-yellow-600 font-extrabold">Victory Ndu</span>
               </p>
             </div>
             <div>
@@ -31,7 +31,7 @@
                   required
                 />
                 <button
-                  class="bg-yellow-300 hover:bg-yellow-600 py-3 px-3 mt-2 absolute right-0 bottom-0"
+                  class="bg-yellow-700 hover:bg-yellow-800 py-3 px-3 mt-2 absolute right-0 bottom-0"
                 >
                   <img src="../assets/svg/caret-right.svg" />
                 </button>
