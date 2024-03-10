@@ -3,13 +3,10 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     nuxtApp.provide('fetch1', async (url, options = {}) => {
         const fullUrl = `${baseURL}${url}`;
-        const response = await fetch(fullUrl, options);
-        return response.json();
+        const response = await $fetch(fullUrl, options);
+        // console.log(response)
+        return response;
     });
 
-    // nuxtApp.provide('$fetch1', async (url, options = {}) => {
-    //     const fullUrl = `${baseURL1}${url}`;
-    //     const response = await fetch(fullUrl, options);
-    //     return response.json();
-    // });
+   
 })

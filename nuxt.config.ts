@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { resolve } from "path";
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   runtimeConfig: {
     public:{
 

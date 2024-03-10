@@ -6,8 +6,9 @@
   background-color: #ffffff; /* White background */
   border-radius: 0.2rem; /* Rounded corners */
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.075); /* Shadow */
-  padding: 1.5rem; /* Padding */
+  /* padding: 1.5rem; Padding */
   color: #000;
+  position: relative;
 }
 
 

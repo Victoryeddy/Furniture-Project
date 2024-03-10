@@ -300,12 +300,11 @@
    <Testimonials/>
 
     <Footer />
+
   </div>
 </template>
 
 <script setup>
-import "vue3-carousel/dist/carousel.css"
-
 
 </script>
 <style>
@@ -313,10 +312,6 @@ import "vue3-carousel/dist/carousel.css"
   font-family: "Lato", sans-serif;
   /* outline: 1px solid red; */
 }
-
-
-
-
 
 .hover-me > span,
 .hover-me > img {
