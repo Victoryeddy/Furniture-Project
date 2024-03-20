@@ -19,6 +19,7 @@ function toggleSidebar() {
 }
 </script>
 <style>
+
 .toggle__icon {
   cursor: pointer;
   position: fixed;

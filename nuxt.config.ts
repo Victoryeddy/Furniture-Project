@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         ital: [100]
       }
     }
-  }], 'vue3-carousel-nuxt'],
+  }], 'vue3-carousel-nuxt', 'nuxt-headlessui'],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
