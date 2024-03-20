@@ -1,6 +1,34 @@
 <template>
-  <div>
-    
+  <div class="relative">
+    <div
+      class="absolute left-0 right-0 z-40 h-full bg-[#f3f3f3] bg-opacity-30 flex justify-center items-center"
+    >
+      <div class=" w-2/4 self-center p-5 relative">
+        <carousel
+          :items-to-show="1"
+          wrapAround
+          :autoplay="3000"
+          class="rounded"
+        >
+          <slide
+            v-for="item in furnitureItems"
+            :key="item"
+            class="flex justify-center items-center"
+          >
+            >
+            <img :src="`${item}`" height="600" />
+          </slide>
+
+          <template #navigation-next>
+       <img src="../assets/icons8-right-arrow-100.png"/>
+    </template>
+
+          <template #addons>
+            <navigation />
+          </template>
+        </carousel>
+      </div>
+    </div>
     <section>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 relative min-h-full">
         <div>
@@ -290,21 +318,31 @@
                   <img src="../assets/expand.svg" />
                 </div>
               </div>
-             <Ratings/>
+              <Ratings />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-   <Testimonials/>
+    <Testimonials />
 
     <Footer />
-
   </div>
 </template>
 
 <script setup>
+
+const furnitureItems = ref(null)
+
+const {data} = await useFetch(`/api/furnitureImages`)
+
+
+onMounted(() => {
+  // console.log(data,123445)
+  furnitureItems.value = data._value.pictures
+  // console.log(furnitureItems.value,13434)
+})
 
 </script>
 <style>
