@@ -1,9 +1,12 @@
 <template>
   <div class="relative">
     <div
-      class="absolute left-0 right-0 z-40 h-full bg-[#f3f3f3] bg-opacity-30 flex justify-center items-center"
+      class="absolute h-full z-40 bg-[#f3f3f3] bg-opacity-30 flex justify-center items-center"
+      v-if="isOpen"
+      
     >
-      <div class=" w-2/4 self-center p-5 relative">
+    <div class="absolute bg-black bg-opacity-30 left-0 right-0 h-full z-40"  @click="isOpen = false"></div>
+      <div class="w-4/6 self-center p-5 relative z-50">
         <carousel
           :items-to-show="1"
           wrapAround
@@ -15,13 +18,13 @@
             :key="item"
             class="flex justify-center items-center"
           >
-            >
-            <img :src="`${item}`" height="600" />
+            
+            <img :src="`${item}`" height="600" class="rounded" />
           </slide>
 
           <template #navigation-next>
-       <img src="../assets/icons8-right-arrow-100.png"/>
-    </template>
+            <img src="../assets/icons8-right-arrow-100.png" />
+          </template>
 
           <template #addons>
             <navigation />
@@ -29,7 +32,7 @@
         </carousel>
       </div>
     </div>
-    <section>
+    <section class="relative">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 relative min-h-full">
         <div>
           <img src="../assets/loaft-header.jpg" alt="" width="900" />
@@ -88,7 +91,7 @@
                 <div class="relative">
                   <img src="../assets/furnitureImg1.jpg" class="rounded" />
                   <div
-                    class="p-3 bg-white absolute z-40 bottom-0 w-6/12 rounded"
+                    class="p-3 bg-white absolute z-20 bottom-0 w-6/12 rounded"
                   >
                     <p class="text-[#F5CA56] text-xl">SMART KITCHEN SETUP</p>
                     <p class="font-bold text-xl mt-4">
@@ -128,7 +131,7 @@
                 <div class="relative">
                   <img src="../assets/furnitureImg2.jpg" class="rounded" />
                   <div
-                    class="p-3 bg-white absolute z-40 bottom-0 w-6/12 rounded"
+                    class="p-3 bg-white absolute z-20 bottom-0 w-6/12 rounded"
                   >
                     <p class="text-[#F5CA56] text-xl">SMART KITCHEN SETUP</p>
                     <p class="font-bold text-xl mt-4">
@@ -150,7 +153,7 @@
                 <div class="relative">
                   <img src="../assets/furnitureImg3.jpg" class="rounded" />
                   <div
-                    class="p-3 bg-white absolute z-40 bottom-0 w-6/12 rounded"
+                    class="p-3 bg-white absolute z-20 bottom-0 w-6/12 rounded"
                   >
                     <p class="text-[#F5CA56] text-xl">SMART KITCHEN SETUP</p>
                     <p class="font-bold text-xl mt-4">
@@ -286,7 +289,8 @@
               <div class="gallery-box relative mt-6">
                 <img src="../assets/gallery1.jpg" class="" />
                 <div
-                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box"
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box cursor-pointer"
+                  @click="isOpen = true"
                 >
                   <img src="../assets/expand.svg" />
                 </div>
@@ -294,7 +298,8 @@
               <div class="gallery-box relative mt-6 self-end">
                 <img src="../assets/gallery3.jpg" />
                 <div
-                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2"
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2 cursor-pointer"
+                   @click="isOpen = true"
                 >
                   <img src="../assets/expand.svg" />
                 </div>
@@ -305,7 +310,8 @@
               <div class="gallery-box relative mt-6 self-start">
                 <img src="../assets/gallery2.jpg" />
                 <div
-                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2"
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2 cursor-pointer"
+                   @click="isOpen = true"
                 >
                   <img src="../assets/expand.svg" />
                 </div>
@@ -313,7 +319,8 @@
               <div class="gallery-box relative mt-6 self-start">
                 <img src="../assets/gallery4.jpg" />
                 <div
-                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box"
+                  class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box cursor-pointer"
+                   @click="isOpen = true"
                 >
                   <img src="../assets/expand.svg" />
                 </div>
@@ -332,23 +339,30 @@
 </template>
 
 <script setup>
-
+import 'vue3-carousel/dist/carousel.css';
 const furnitureItems = ref(null)
 
-const {data} = await useFetch(`/api/furnitureImages`)
+const isOpen = ref(false)
 
+const { data } = await useFetch(`/api/furnitureImages`)
 
 onMounted(() => {
   // console.log(data,123445)
   furnitureItems.value = data._value.pictures
   // console.log(furnitureItems.value,13434)
 })
-
 </script>
 <style>
 * {
   font-family: "Lato", sans-serif;
   /* outline: 1px solid red; */
+}
+
+.carousel-navigation-next,
+.carousel-navigation-prev {
+ width: 90px;
+ height: 90px;
+ font-size: 24px;
 }
 
 .hover-me > span,
