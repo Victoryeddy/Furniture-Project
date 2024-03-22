@@ -42,7 +42,7 @@
 
 @media only screen and (max-width: 40rem) {
   .nav {
-    width: 50%;
+    width: 55%;
   }
 }
 </style>
