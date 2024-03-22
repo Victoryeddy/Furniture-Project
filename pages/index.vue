@@ -3,9 +3,11 @@
     <div
       class="absolute h-full z-40 bg-[#f3f3f3] bg-opacity-30 flex justify-center items-center"
       v-if="isOpen"
-      
     >
-    <div class="absolute bg-black bg-opacity-30 left-0 right-0 h-full z-40"  @click="isOpen = false"></div>
+      <div
+        class="absolute bg-black bg-opacity-30 left-0 right-0 h-full z-40"
+        @click="isOpen = false"
+      ></div>
       <div class="w-4/6 self-center p-5 relative z-50">
         <carousel
           :items-to-show="1"
@@ -18,7 +20,6 @@
             :key="item"
             class="flex justify-center items-center"
           >
-            
             <img :src="`${item}`" height="600" class="rounded" />
           </slide>
 
@@ -34,18 +35,18 @@
     </div>
     <section class="relative">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 relative min-h-full">
-        <div>
+        <div data-aos="fade-right">
           <img src="../assets/loaft-header.jpg" alt="" width="900" />
         </div>
         <div class="ms-0 lg:ms-10 mt-10 px-3 lg:px-0">
           <div class="flex flex-col justify-between">
             <img src="../assets/logo.png" alt="" width="60" class="pt-5" />
             <div class="flex flex-col mt-12">
-              <h1 class="text-5xl font-extrabold ms-10">
+              <h1 class="text-5xl font-extrabold ms-10" data-aos="fade-left">
                 Precise Concept design
                 <br />for Posh living
               </h1>
-              <p class="ms-10 mt-8 font-medium text-xl">
+              <p class="ms-10 mt-8 font-medium text-xl" data-aos="fade-left">
                 If you are looking at blank cassettes on the web, you may be
                 very confused at the difference in price. You may see some for
                 as low as $.17 each. You may be saying to yourself,
@@ -54,6 +55,7 @@
           </div>
           <div
             class="bg-yellow-700 p-9 w-7/12 right-0 bottom-0 absolute hidden lg:block"
+            data-aos="fade-up"
           >
             <p class="flex justify-center text-white hover-me">
               <span class="mt-1 me-2 font-bold text-xl"
@@ -72,9 +74,9 @@
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-stretch"
           >
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-right">
               <div class="justify-self-start">
-                <h2 class="text-5xl font-extrabold">
+                <h2 class="text-5xl font-extrabold" >
                   We Are <span class="text-[#F5CA56]">Loaft</span> Here Are Some
                   Of Our <span class="text-[#F5CA56]">Latest Works</span>
                 </h2>
@@ -92,6 +94,7 @@
                   <img src="../assets/furnitureImg1.jpg" class="rounded" />
                   <div
                     class="p-3 bg-white absolute z-20 bottom-0 w-6/12 rounded"
+                   
                   >
                     <p class="text-[#F5CA56] text-xl">SMART KITCHEN SETUP</p>
                     <p class="font-bold text-xl mt-4">
@@ -126,12 +129,13 @@
               </div>
             </div>
 
-            <div class="flex content-center flex-col ms-0 lg:ms-5">
+            <div class="flex content-center flex-col ms-0 lg:ms-5" data-aos="fade-left">
               <div class="">
                 <div class="relative">
                   <img src="../assets/furnitureImg2.jpg" class="rounded" />
                   <div
                     class="p-3 bg-white absolute z-20 bottom-0 w-6/12 rounded"
+                    
                   >
                     <p class="text-[#F5CA56] text-xl">SMART KITCHEN SETUP</p>
                     <p class="font-bold text-xl mt-4">
@@ -154,6 +158,7 @@
                   <img src="../assets/furnitureImg3.jpg" class="rounded" />
                   <div
                     class="p-3 bg-white absolute z-20 bottom-0 w-6/12 rounded"
+                   
                   >
                     <p class="text-[#F5CA56] text-xl">SMART KITCHEN SETUP</p>
                     <p class="font-bold text-xl mt-4">
@@ -204,10 +209,10 @@
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-stretch mt-3"
           >
-            <div class="flex">
+            <div class="flex" data-aos="fade-right">
               <img src="../assets/service1.jpg" class="self-center" />
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-left">
               <div
                 class="lg:w-3/4 my-6 border border-[#f3f3f3] p-3 border-t-0 border-s-0 border-e-0"
               >
@@ -271,7 +276,7 @@
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-stretch"
           >
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-right">
               <div class="justify-self-end">
                 <h2 class="text-5xl font-extrabold">
                   Our <span class="text-[#F5CA56]">Gallery</span>
@@ -299,19 +304,19 @@
                 <img src="../assets/gallery3.jpg" />
                 <div
                   class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2 cursor-pointer"
-                   @click="isOpen = true"
+                  @click="isOpen = true"
                 >
                   <img src="../assets/expand.svg" />
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-col">
+            <div class="flex flex-col" data-aos="fade-left">
               <div class="gallery-box relative mt-6 self-start">
                 <img src="../assets/gallery2.jpg" />
                 <div
                   class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box-2 cursor-pointer"
-                   @click="isOpen = true"
+                  @click="isOpen = true"
                 >
                   <img src="../assets/expand.svg" />
                 </div>
@@ -320,7 +325,7 @@
                 <img src="../assets/gallery4.jpg" />
                 <div
                   class="bg-white absolute right-0 bottom-0 z-30 p-6 expand-box cursor-pointer"
-                   @click="isOpen = true"
+                  @click="isOpen = true"
                 >
                   <img src="../assets/expand.svg" />
                 </div>
@@ -339,7 +344,8 @@
 </template>
 
 <script setup>
-import 'vue3-carousel/dist/carousel.css';
+import "vue3-carousel/dist/carousel.css"
+
 const furnitureItems = ref(null)
 
 const isOpen = ref(false)
@@ -347,9 +353,9 @@ const isOpen = ref(false)
 const { data } = await useFetch(`/api/furnitureImages`)
 
 onMounted(() => {
-  // console.log(data,123445)
+ 
   furnitureItems.value = data._value.pictures
-  // console.log(furnitureItems.value,13434)
+ 
 })
 </script>
 <style>
@@ -360,9 +366,9 @@ onMounted(() => {
 
 .carousel-navigation-next,
 .carousel-navigation-prev {
- width: 90px;
- height: 90px;
- font-size: 24px;
+  width: 90px;
+  height: 90px;
+  font-size: 24px;
 }
 
 .hover-me > span,

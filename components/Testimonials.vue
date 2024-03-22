@@ -6,7 +6,7 @@
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-stretch"
           >
-            <div class="flex flex-col self-center">
+            <div class="flex flex-col self-center" >
               <div class="justify-self-start">
                 <h2 class="text-5xl font-extrabold">
                   We Are <span class="text-[#F5CA56]">Loaft</span><br />
@@ -20,11 +20,11 @@
 
                 <div class="mt-7">
                   <carousel :items-to-show="1" wrapAround :autoplay="3000">
-                    <slide v-for="slide in testimonials" :key="slide.id">
+                    <slide v-for="slide in testimonials" :key="slide.id" class="flex flex-col justify-start">
                       <p class="carousel__item text-2xl text-start">
                         {{ slide.name }}
                       </p>
-                      <div class="carousel__item flex my-5">
+                      <div class="carousel__item flex mt-8 ms-[25rem]">
                         <div>
                           <img src="../assets/testi-author.png" />
                         </div>
@@ -57,8 +57,8 @@
               </div>
             </div>
 
-            <div>
-              <img src="../assets/testi-img.jpg" />
+            <div data-aos="fade-left">
+              <img src="../assets/testi-img.jpg" class="rounded-lg"/>
             </div>
           </div>
         </div>
@@ -84,4 +84,8 @@ onMounted(() => {
 })
 </script>
 
-<style></style>
+<style>
+/* *{
+  outline: 2px solid green;
+} */
+</style>

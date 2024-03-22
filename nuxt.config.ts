@@ -8,6 +8,14 @@ export default defineNuxtConfig({
       newsApiKey: process.env.VUE_APP_NEWS_API_KEY,
     }
   },
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'https://unpkg.com/aos@2.3.1/dist/aos.css' }
+    ],
+    script: [
+      { src: 'https://unpkg.com/aos@2.3.1/dist/aos.js', type: 'text/javascript' }
+    ]
+  },
   plugins: ['~/plugins/vue3-google-map.ts', '~/plugins/G-news-api.ts'],
   alias: {
     "@": resolve(__dirname, "/"),
@@ -22,7 +30,7 @@ export default defineNuxtConfig({
         ital: [100]
       }
     }
-  }], 'vue3-carousel-nuxt', 'nuxt-headlessui'],
+  }], 'vue3-carousel-nuxt', 'nuxt-aos'],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {

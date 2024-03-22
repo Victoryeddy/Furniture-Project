@@ -2,10 +2,10 @@
   <div>
     <section>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 relative min-h-full">
-        <div class="col-span-2">
+        <div class="col-span-2" data-aos="fade-right">
           <img src="../assets/about-us.jpg" alt="" width="1000" />
         </div>
-        <div class="ms-0 lg:ms-3 mt-10 px-3 lg:px-0">
+        <div class="ms-0 lg:ms-3 mt-10 px-3 lg:px-0" data-aos="fade-left">
           <div class="flex flex-col justify-between">
             <div class="flex flex-col mt-9">
               <h1 class="text-5xl font-extrabold ms-10">About Us</h1>
@@ -17,6 +17,7 @@
           </div>
           <div
             class="bg-yellow-700 p-4 w-5/12 right-0 bottom-0 absolute hidden lg:block"
+            data-aos="fade-up"
           >
             <p class="flex justify-center text-white hover-me">
               <span class="mt-1 me-2 font-bold text-xl">Explore Now</span>
@@ -31,7 +32,7 @@
       <div class="py-[5rem]">
         <div class="container mx-auto px-3">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-            <div>
+            <div data-aos="fade-right">
               <div class="">
                 <h2 class="text-5xl font-extrabold">
                   Our <span class="text-[#F5CA56]">Achievement</span>
@@ -61,8 +62,8 @@
               </div>
               <Ratings />
             </div>
-            <div class="flex justify-center">
-              <img src="../assets/SPS_1374-removebg-preview.png" />
+            <div class="flex justify-center" data-aos="fade-left">
+              <img src="../assets/SPS_1374-removebg-preview.png" class="rounded-lg"/>
             </div>
           </div>
         </div>
